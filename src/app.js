@@ -3,24 +3,26 @@ window.onload = function() {
     document.querySelector("#excuse").innerHTML = generador();
   });
 
-  var who = ["The dog", "My grandma", "His turtle", "My bird"];
-  var action = ["ate", "peed", "crushed", "broke"];
-  var what = ["my homework", "the keys", "the car"];
-  var when = [
+  const who = ["The dog", "My grandma", "His turtle", "My bird"];
+  const action = ["ate", "peed", "crushed", "broke"];
+  const what = ["my homework", "the keys", "the car"];
+  const when = [
     "before the class",
     "right on time",
     "when I finished",
     "during my lunch",
     "while I was praying"
   ];
-
+  
+  let IndiceWho = Math.floor(Math.random() * who.length);
+  let IndiceAction = Math.floor(Math.random() * action.length);
+  let IndiceWhat = Math.floor(Math.random() * what.length);
+  let IndiceWhen = Math.floor(Math.random() * when.length);
+  
   function generador() {
-    var IndiceWho = Math.floor(Math.random() * who.length);
-    var IndiceAction = Math.floor(Math.random() * action.length);
-    var IndiceWhat = Math.floor(Math.random() * what.length);
-    var IndiceWhen = Math.floor(Math.random() * when.length);
+  
 
-    var excusa =
+    let excusa =
       who[IndiceWho] +
       " " +
       action[IndiceAction] +
