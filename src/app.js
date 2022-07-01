@@ -14,13 +14,14 @@ window.onload = function() {
     "while I was praying"
   ];
   
+  
+  
+  function generador() {
+  
   let IndiceWho = Math.floor(Math.random() * who.length);
   let IndiceAction = Math.floor(Math.random() * action.length);
   let IndiceWhat = Math.floor(Math.random() * what.length);
   let IndiceWhen = Math.floor(Math.random() * when.length);
-  
-  function generador() {
-  
 
     let excusa =
       who[IndiceWho] +
